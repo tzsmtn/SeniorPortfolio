@@ -1,73 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Tenzin Samten, a student developer at Thomas A. Edison CTE High School.">
-  <title>Tenzin Samten | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Tenzin Samten, a student at Thomas A. Edison CTE High School who makes games, websites, and music with code.">
+<title>Tenzin Samten</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Caveat:wght@600&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="site-nav" aria-label="Main navigation">
-    <div class="nav-inner">
-      <a class="nav-logo" href="index.html">Tenzin Samten</a>
-      <div class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
+<nav><div class="wrap">
+  <a class="logo" href="index.html">Tenzin Samten</a>
+  <div><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<main>
+<div class="wrap hero" id="home">
+  <div>
+    <p class="note">student at Thomas A. Edison CTE High School</p>
+    <h1>Hi, I'm <em>Tenzin.</em></h1>
+    <p class="lead">I build games, websites, and music with code. Most of what's below started as a class assignment and turned into something I wanted to keep tinkering with.</p>
+    <div class="actions">
+      <a class="btn main" href="#projects">See what I've made</a>
+      <a class="btn" href="https://github.com/tzsmtn" target="_blank" rel="noopener noreferrer">My GitHub</a>
     </div>
-  </nav>
+  </div>
+  <div class="coin-box">
+    <button class="coin" id="coin" type="button" aria-label="Flip the coin">?</button>
+    <span class="note" id="coin-msg" aria-live="polite">go on, flip it (it's from my arcade)</span>
+  </div>
+</div>
 
-  <main class="wrap">
-    <section class="hero" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow">Thomas A. Edison CTE High School</p>
-        <h1>Thoughtful code.<br><span>Creative projects.</span></h1>
-        <p class="hero-description">I'm Tenzin, a student developer exploring web development, Python, and music technology. I like making useful, playful things and learning by building.</p>
-        <div class="hero-actions">
-          <a href="#projects" class="button button-primary">Explore my work <span aria-hidden="true">↓</span></a>
-          <a href="https://github.com/tzsmtn" target="_blank" rel="noopener noreferrer" class="button button-secondary">GitHub <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-      <div class="hero-mark" aria-hidden="true"><span>TS</span><i></i><i></i><i></i></div>
-    </section>
+<section class="wrap" id="projects">
+  <div class="sec-head"><h2>Things I've made</h2></div>
 
-    <section class="section" id="projects">
-      <div class="section-heading">
-        <div><p class="eyebrow">Selected work</p><h2>Projects</h2></div>
-        <p class="section-intro">A few things I've made with code and sound.</p>
-      </div>
-      <div class="project-grid">
-        <a class="project-card" href="functions-arcade.html">
-          <div class="project-thumb thumb-arcade" aria-hidden="true"><span class="thumb-kicker">FUNCTIONS</span><span class="thumb-title">ARCADE</span><span class="arcade-pixels">✦ &nbsp; ● &nbsp; ▲</span></div>
-          <div class="project-card-copy"><p class="project-type">PYTHON · GAMES</p><h3>Functions Arcade</h3><p>A collaborative collection of small games, including a coin-flip challenge.</p><span class="card-link">View project <span aria-hidden="true">↗</span></span></div>
-        </a>
-        <a class="project-card" href="holiday-remix.html">
-          <div class="project-thumb thumb-remix" aria-hidden="true"><span class="thumb-kicker">MUSIC PROJECT</span><span class="thumb-title">123<br>REMIX</span><span class="sound-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
-          <div class="project-card-copy"><p class="project-type">PYTHON · EARSKETCH</p><h3>Holiday Remix</h3><p>A musical remix that shifts its tempo and arrangement based on the chosen mood.</p><span class="card-link">View project <span aria-hidden="true">↗</span></span></div>
-        </a>
-        <a class="project-card" href="ringtone.html">
-          <div class="project-thumb thumb-ringtone" aria-hidden="true"><span class="thumb-kicker">SOUND DESIGN</span><span class="thumb-title">RING<br>TONE</span><span class="ring-circle"></span></div>
-          <div class="project-card-copy"><p class="project-type">PYTHON · EARSKETCH</p><h3>Ringtone</h3><p>A short layered ringtone with drums, bass, synth, and a kalimba outro.</p><span class="card-link">View project <span aria-hidden="true">↗</span></span></div>
-        </a>
-      </div>
-    </section>
+  <article class="project">
+    <div class="project-thumb thumb-drive" aria-hidden="true"><span class="road">🚗</span><span class="thumb-kicker">Team app</span><span class="thumb-title">Drive<br>Quest</span></div>
+    <div class="project-body">
+      <h3>DriveQuest</h3>
+      <p>An interactive app that teaches new and teenage drivers road safety through practice instead of a dry handbook. Our team built it to help new drivers make better decisions behind the wheel.</p>
+      <dl class="facts"><dt>My part</dt><dd>Research and game design</dd><dt>Team</dt><dd>Karan Mehta, Stephany Zaraza, Aritra Paul, and me</dd><dt>Includes</dt><dd>Live site, pitch slideshow, video demo</dd></dl>
+      <a class="btn main" href="drivequest.html">Read the full story</a>
+    </div>
+  </article>
 
-    <section class="section about-section" id="about">
-      <div><p class="eyebrow">A little about me</p><h2>Learning by making.</h2></div>
-      <div class="about-copy"><p>I'm a student at Thomas A. Edison CTE High School interested in software, creative coding, and music. My projects are a place to experiment, practice, and share what I'm learning.</p><div class="skill-list"><span>HTML &amp; CSS</span><span>Python</span><span>EarSketch</span><span>Creative coding</span></div></div>
-    </section>
+  <article class="project">
+    <div class="project-thumb thumb-arcade" aria-hidden="true"><span class="arcade-pixels">✦ ● ▲</span><span class="thumb-kicker">Python games</span><span class="thumb-title">Functions<br>Arcade</span></div>
+    <div class="project-body">
+      <h3>Functions Arcade</h3>
+      <p>A group collection of small Python games, each one built around functions. Mine includes a coin-flip challenge, the same one you can flip at the top of this page.</p>
+      <dl class="facts"><dt>Made with</dt><dd>Python</dd><dt>Type</dt><dd>Collaborative game collection</dd></dl>
+      <a class="btn" href="functions-arcade.html">Read the full story</a>
+    </div>
+  </article>
 
-    <section class="contact-section" id="contact">
-      <p class="eyebrow">Get in touch</p><h2>Let's connect.</h2>
-      <p>Want to talk about a project or see more of my work?</p>
-      <div class="hero-actions contact-actions"><a class="button button-primary" href="mailto:tenzins93@nycstudents.net">Send me an email <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="https://github.com/tzsmtn" target="_blank" rel="noopener noreferrer">Visit GitHub <span aria-hidden="true">↗</span></a></div>
-    </section>
-  </main>
-  <footer><span>© 2026 Tenzin Samten</span><a href="#home">Back to top ↑</a></footer>
+  <article class="project">
+    <div class="project-thumb thumb-remix" aria-hidden="true"><span class="sound-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="thumb-kicker">Music remix</span><span class="thumb-title">Holiday<br>Remix</span></div>
+    <div class="project-body">
+      <h3>Holiday Remix</h3>
+      <p>A remix that changes its tempo and arrangement depending on the mood you pick. One song, several different feelings, all controlled by code.</p>
+      <dl class="facts"><dt>Made with</dt><dd>Python in EarSketch</dd><dt>Type</dt><dd>Music and code</dd></dl>
+      <a class="btn" href="holiday-remix.html">Read the full story</a>
+    </div>
+  </article>
+
+  <article class="project">
+    <div class="project-thumb thumb-ringtone" aria-hidden="true"><span class="ring-circle"></span><span class="thumb-kicker">Sound design</span><span class="thumb-title">Ring<br>tone</span></div>
+    <div class="project-body">
+      <h3>Ringtone</h3>
+      <p>A short, layered ringtone with drums, bass, and synth, finishing on a kalimba outro.</p>
+      <dl class="facts"><dt>Made with</dt><dd>Python in EarSketch</dd><dt>Type</dt><dd>Sound design</dd></dl>
+      <a class="btn" href="ringtone.html">Read the full story</a>
+    </div>
+  </article>
+</section>
+
+<section class="wrap about" id="about">
+  <h2 style="font-size:clamp(2.2rem,5vw,3.2rem);font-weight:800">A bit about me</h2>
+  <div>
+    <p>I'm interested in software, creative coding, and music, and I like when those overlap. These projects are where I practice, break things, and figure out how to fix them.</p>
+    <p>I also like working on a team, like on DriveQuest, where research, design, and code all had to fit together.</p>
+    <ul class="chips"><li>HTML &amp; CSS</li><li>Python</li><li>EarSketch</li><li>Game design</li><li>Research</li></ul>
+  </div>
+</section>
+
+<div class="wrap">
+  <section class="contact" id="contact">
+    <h2>Want to talk?</h2>
+    <p>Got a project idea, or just want to say hi? Email me.</p>
+    <div class="actions"><a class="btn main" href="mailto:tenzins93@nycstudents.net">Email me</a><a class="btn" href="https://github.com/tzsmtn" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+  </section>
+</div>
+</main>
+<footer><div class="wrap"><span>© 2026 Tenzin Samten</span><a href="#home">Back to top</a></div></footer>
+
+<script>
+const coin=document.getElementById('coin'),msg=document.getElementById('coin-msg');
+coin.addEventListener('click',()=>{
+  coin.classList.remove('spin');void coin.offsetWidth;coin.classList.add('spin');
+  const heads=Math.random()<.5;
+  setTimeout(()=>{coin.textContent=heads?'H':'T';msg.textContent=heads?'Heads. Nice.':'Tails. Try again?';},250);
+});
+</script>
 </body>
 </html>

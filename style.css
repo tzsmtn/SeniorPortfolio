@@ -120,3 +120,6 @@ footer .wrap{max-width:none;display:flex;justify-content:space-between;gap:1rem;
 }
 @media(max-width:520px){.team{grid-template-columns:1fr}.wrap{padding:0 .8rem}nav div a{margin-left:.7rem}.project::after,.hero::after,.about::after,.contact::after,.detail-content::after{display:none}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.contact .contact-line{margin-bottom:.3rem}
+.contact .contact-line+.actions,.contact .contact-line:last-of-type{margin-bottom:1.5rem}
